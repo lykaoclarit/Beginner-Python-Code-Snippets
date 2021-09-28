@@ -1,3 +1,4 @@
+#Day 1 of 100 - Python Challenge
 #Band Name Generator - areview for printing, string manipulation and variable declaring in python
 print("Welcome to the Band Name Generator")
 
