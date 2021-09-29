@@ -25,3 +25,16 @@ w = float(weight)
 
 bmi = (w / (h ** 2))
 print(int(bmi))
+
+#Life in Weeks - with using F string
+age = input("What is your current age?\n")
+remaining_years = (90 - int(age)) 
+x = 365
+y = 52
+z = 12
+
+days = remaining_years * x
+weeks = remaining_years * y
+months = remaining_years * z
+
+print(f"You have {days} days, {weeks}, and {months} months left.")
