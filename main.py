@@ -15,3 +15,13 @@ print("Your Band Name is: \n" + band_name)
 two_digit_number = input("Type a two digit number: ")
 output = (int(two_digit_number[0]) + int(two_digit_number[1])) 
 print(output)
+
+#BMI Calculator
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+
+h = float(height)
+w = float(weight)
+
+bmi = (w / (h * h))
+print(int(bmi))
