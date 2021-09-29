@@ -38,3 +38,21 @@ weeks = remaining_years * y
 months = remaining_years * z
 
 print(f"You have {days} days, {weeks}, and {months} months left.")
+
+#Tip Calculator
+
+print("Welcome to Tip Calculator!\n")
+
+total_bill = input ("What was the total bill? $")
+percentage_tip = input("What percentage tip would you like to give? 10, 12, or 15: ")
+no_of_people = input("How many people to split the bill? ")
+
+percentage_formula = int(percentage_tip)/100 #tip in percentage
+total_tip = int(total_bill)*float(percentage_formula) #total tip amount
+
+final_bill = int(total_bill) + float(total_tip) #final bill
+split_formula =float(final_bill)/int(no_of_people) #bill split w/ no of people
+
+split_bill = round(split_formula, 2) #biil each person
+
+print(f"Each person should pay ${split_bill}")
