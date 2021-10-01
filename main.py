@@ -140,7 +140,5 @@ elif size == "L":
       print(f"Your total bill is ${bill}")
   else:
     print(f"Your total bill is ${bill}")
-else:
-  print(f"Your total bill is {bill}")
 
 
