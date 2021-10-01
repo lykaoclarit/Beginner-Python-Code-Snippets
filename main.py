@@ -56,3 +56,31 @@ split_formula =float(final_bill)/int(no_of_people) #bill split w/ no of people
 split_bill = round(split_formula, 2) #biil each person
 
 print(f"Each person should pay ${split_bill}")
+
+#Day 3 Control Flow and Logical Operators
+number = int(input("Which number do you want to check? "))
+
+input_number = number % 2
+
+if input_number == 0:
+  print("You have entered an even number")
+else:
+  print("You have entered an odd number")
+  
+#BMI 
+
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+
+bmi = int(weight / (height ** 2))
+
+if bmi <= 18.5:
+  print(f"Your bmi is {bmi}. You are underweight")
+elif bmi <= 25:
+  print(f"Your bmi is {bmi}. You have a normal weight")
+elif bmi <= 30:
+  print(f"Your bmi is {bmi}. You are slightly overweight")
+elif bmi <= 35:
+  print(f"Your bmi is {bmi}. You are obese.")
+else:
+  print(f"Your bmi is {bmi}. You are clinically obese") 
