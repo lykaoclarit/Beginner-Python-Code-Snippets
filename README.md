@@ -6,3 +6,5 @@ Here are the simple challenges from the course.
 These code snippets are for beginner level. 
 
 I had some Python background during my last years in college, I am taking this course as a refresher and to have a strong foundation in Python.
+
+These snippets can also be found at https://replit.com/@lykaoclarit
