@@ -312,13 +312,7 @@ if (player_choice == 0 and computer == 2):
   print("Computer\n")
   print(rps[computer]) 
   print("You win!")
-elif (player_choice == 1 and computer == 0):
-  print(rps[player_choice])
-  print("vs\n")
-  print("Computer\n")
-  print(rps[computer]) 
-  print("You win!")
-elif (player_choice == 2 and computer == 1):
+elif (player_choice > computer):
   print(rps[player_choice])
   print("vs\n")
   print("Computer\n")
