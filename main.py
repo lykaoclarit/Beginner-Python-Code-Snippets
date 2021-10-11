@@ -264,3 +264,75 @@ selected = (map[vertical-1])
 selected[horizontal - 1] = "X"
 
 print(f"{row1}\n{row2}\n{row3}")
+
+#Rock Paper Scissors Game
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+rps = [rock, paper, scissors] #list of choices
+
+choice = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors \n")
+player_choice = int(choice) #det if 0-2
+
+# print(rps[player_choice])
+
+
+import random 
+
+computer = random.randint(0, 2)
+# rps[computer]
+
+if (player_choice == 0 and computer == 2):
+  print(rps[player_choice])
+  print("vs\n")
+  print("Computer\n")
+  print(rps[computer]) 
+  print("You win!")
+elif (player_choice == 1 and computer == 0):
+  print(rps[player_choice])
+  print("vs\n")
+  print("Computer\n")
+  print(rps[computer]) 
+  print("You win!")
+elif (player_choice == 2 and computer == 1):
+  print(rps[player_choice])
+  print("vs\n")
+  print("Computer\n")
+  print(rps[computer]) 
+  print("You win!")
+elif (player_choice == computer):
+  print(rps[player_choice])
+  print("vs\n")
+  print("Computer\n")
+  print(rps[computer]) 
+  print("Draw!")
+else:
+  print(rps[player_choice])
+  print("vs\n")
+  print("Computer\n")
+  print(rps[computer]) 
+  print("You lose!")
