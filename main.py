@@ -233,3 +233,16 @@ if (random_integer == 1):
   print("Heads")
 else:
   print("Tails")
+  
+  
+#Random Names from a List
+names_string = input("Give me everybody's names, separated by a comma.\n")
+names = names_string.split(", ")
+
+import random
+
+x = len(names)
+random_name = random.randint(0, x - 1)
+payer = names[random_name]
+
+print(f"{payer} is going to buy the meal today.")
