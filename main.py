@@ -218,3 +218,18 @@ elif (direction == "right"):
       print("Congratulations, you win!")
 else:
   print("Game over!")
+
+#Day 4 
+#Randomisation and Py Lists
+  
+
+import random 
+
+print("Heads or Tails?")
+
+random_integer = random.randint(0, 1)
+
+if (random_integer == 1):
+  print("Heads")
+else:
+  print("Tails")
